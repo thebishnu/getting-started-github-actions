@@ -6,8 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     container: node:14
     steps:
-      - run: node --version
-      - run: npm --version
-      - uses: actions/checkout@v4
-      - run: npm install
-      - run: node app.js
+      - name: Check Node Version
+        run: node --version
+      - name: Check NPM Version
+        run: npm --version
+      - name: Chckeout Code
+        uses: actions/checkout@v4
+      - name: Install NPM Packages
+        run: npm install
+      - name: Run Application
+        run: node app.js
+        
