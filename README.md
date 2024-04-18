@@ -1,1 +1,1 @@
-# getting-started-github-actions
+# Continuous Integration with GitHub Actions
